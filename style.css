@@ -8,32 +8,38 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    flex-wrap: nowrap;
-    flex-flow: row;
-    align-items:center;
+    flex-wrap: nowrap; /* Ben olsam wrap yapardım */
+    flex-flow: row column; /* Gereksiz */
+    align-items:center;  /* Gereksiz */
     justify-content: flex-end;
  }
 
  .flex-item {
+  /* kısaltılabilir
     padding-top: 30px;
     padding-bottom:30px;
     padding-left: 5px;
     padding-right: 25px;
-    margin-top: 0px;
-    line-height: 40px;
+    */
+
+    padding: 30px 25px 30px 0;
+
+    margin-top: 0px; /* Gereksiz, zaten tüm unitlerin içine yazılmazsa paddingleri yok*/
+    line-height: 40px; /* Gereksiz, hem şu an çalışmıyor hem fantezi, bunun çalışması için aşağıya bir obje koymalısın ve bu kod aşağıdaki elementi çok aşağıya atar */
     color: black;
     font-weight: bold;
     font-size: 25px;
     
   }
 
+  /* Bu kısım seksi olmuş eline sağlık */
   .flex-image {
     margin-right: auto;
     margin-left: 30px;
     padding: 20px;
   }
 
-  img
+  img /* o kadar svg öğrendik resim koymuşsun püh ama iyi akıl etmişsiniz width height behendim*/
   {
     width: 65px;
     height: 65px;
